@@ -1,0 +1,255 @@
+html  {
+  font-size: 16px;
+}
+body  {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+}
+
+/* header */
+header img {
+  height: 80px;
+}
+
+.spacer {
+  height: 6rem;
+}
+
+
+header  {
+  display: flex;
+  position: fixed;
+  background-color: RGB(199,7,19);
+  width: 100%;
+  height: 6rem;
+  align-items: center;
+  justify-content: center;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  z-index: 1;
+  border-bottom: 2px solid RGB(199,7,19);
+  box-shadow: 0px 3px 3px lightgray;
+}
+
+.mobilelogo {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 850px) {
+    header  {
+      flex-direction: column;
+      align-items: flex-start;
+      height: 6rem;
+    }
+    .header_logo  {
+      margin: 1rem 0;
+    }
+
+    .desktoplogo  {
+      display: none;
+    }
+    .mobilelogo {
+      display: flex;
+    }
+}
+
+
+.contact_us {
+  border: 2px solid RGB(199,7,19);
+  width: 175px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.contact_us:hover {
+  background-color: RGB(199,7,19);
+  color: white;
+  text-decoration: none;
+  transition-delay: 0.05s;
+  transition-timing-function: ease-in-out;
+}
+
+.contact_us:active {
+  background-color: gray;
+  border: 2px solid gray;
+}
+
+.heading  {
+  letter-spacing: 0.5px;
+  /* margin-left: 10px; */
+  position: relative;
+  top: 5px;
+}
+
+h1  {
+  color: white;
+}
+
+/* header end */
+
+/* jumbotron */
+.jumbotron  {
+  background-image: url(../../resources/images/aoraki.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 5px 5px;
+}
+
+.jumbo  {
+  background-color: gray;
+  opacity: 0.9;
+}
+
+.h2  {
+  margin: 1rem auto;
+  max-width: 1000px;
+}
+
+/* why section */
+
+
+.button {
+  border: 2px solid RGB(199,7,19);
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+.button:hover {
+  background-color: RGB(199,7,19);
+  color: white;
+  text-decoration: none;
+  transition-delay: 0.05s;
+  transition-timing-function: ease-in-out;
+}
+
+.button:active {
+  background-color: gray;
+  border: 2px solid gray;
+}
+
+.why  li  {
+  font-size: 1.3rem;
+}
+
+li  {
+  padding: 0.5rem 0;
+}
+
+.why li span {
+  font-weight: bold;
+}
+
+
+/* 4 key points */
+
+/* .test {
+  width: 500px;
+  height: 500px;
+} */
+
+.divider_holder {
+  display: flex;
+  justify-content: center;
+  height: 10px;
+}
+
+.divider  {
+  height: 2px;
+  width: 110px;
+  background-color: RGB(199,7,19);
+  margin-bottom: 1.5rem;
+}
+
+li span {
+  font-style: italic;
+}
+
+.row i {
+  margin: 1.5rem;
+  color: gray;
+}
+
+.box  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* footer */
+
+footer  {
+  margin-top: 2rem;
+  height: 200px;
+  width: 100%;
+  background-color: gray;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+footer p  {
+  font-size: 1.3rem;
+}
+
+footer  h3  {
+  margin-top: 20px;
+}
+
+footer  span  {
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+footer a  {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.footer_links {
+  margin-top: 5px;
+  margin-left: 15px;
+  padding: 5px 0;
+}
+
+footer a:hover {
+  color: black;
+  text-decoration: none;
+  transition-delay: 0.05s;
+  transition-timing-function: ease-in-out;
+}
+
+/* FAQ Style */
+
+.faq  {
+  margin-left: 20px;
+}
+
+.faq h3 {
+  margin-top: 20px;
+}
+
+/* terms style */
+
+.terms_margin {
+  margin-top: 20px;
+}
+
+.about_text {
+  margin-top: 3rem;
+  padding: 0.5rem
+}

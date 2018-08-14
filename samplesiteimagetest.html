@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Your Holiday Home Online Sample</title>
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/samplestyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container-fluid top_box">
+      <a href="index.html">Back to main site</a>
+      <h6>Your Holiday Home Online - Site for Sample Purpose Only</h6>
+    </div>
+    <head>
+      <div class="container-fluid">
+        <h1>Wyndcliff Cottage</h1>
+      </div>
+    </head>
+    <div class="jumbotron main_image">
+    </div>
+    <div class="container-fluid">
+      <a href="#">Welcome</a>
+      <a href="#">Look Inside</a>
+      <a href="#">The Poperty</a>
+      <a href="#">The Local Area</a>
+      <a href="#">Where we are</a>
+      <a href="#">What other guests say</a>
+      <a href="#">Drop us a line</a>
+    </div>
+
+    <div class="container-fluid welcome">
+      <h3>Welcome</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu sem lorem. Duis ac lobortis leo. Aenean rutrum risus sit amet arcu condimentum iaculis sed a mauris. Fusce eros sapien, iaculis vel nibh id, viverra posuere massa. Ut eu dignissim justo, quis dapibus sapien. Mauris pulvinar, est convallis aliquet maximus, urna tellus vehicula elit, vitae porttitor tortor diam vitae arcu. Maecenas pharetra, eros sed pretium tempor, nisi massa dignissim turpis, eu scelerisque mi velit a est. </p><p>In varius laoreet leo, at facilisis leo imperdiet at. In volutpat malesuada imperdiet. Aliquam magna libero, ultrices ac nunc vel, porta suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Curabitur luctus lectus a faucibus vestibulum. Proin malesuada dui nec finibus tempor. Quisque lacus est, pretium ut vehicula vitae, aliquet sed est. Maecenas hendrerit vulputate feugiat. Integer mattis tellus ut gravida scelerisque. Nam accumsan lacus lacinia dolor maximus, nec pretium urna feugiat. Donec in consequat turpis. Maecenas eget eros sodales, feugiat lorem in, congue ante. Quisque ac enim sollicitudin, tincidunt diam eget, sodales massa. Proin ac scelerisque dolor, vitae </p><p>luctus quam. Donec bibendum libero at fringilla bibendum. Aliquam porta porttitor metus. Vestibulum vitae aliquet turpis, tristique semper dui. Sed hendrerit cursus justo aliquam commodo. Fusce ultricies suscipit feugiat. Phasellus et dui nec velit aliquet dictum.</p>
+    </div>
+
+    <div class="container-fluid images">
+      <div class="title_fav">
+        <h3>Look Inside</h3>
+        <a href="#">
+        <i class="fas fa-angle-up"></i>
+        </a>
+      </div>
+      <div class="slideshow-container">
+
+        <div class="mySlides fades">
+          <div class="numbertext">1 / 3</div>
+          <img src="resources/images/cup-1320578__480.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fades">
+          <div class="numbertext">2 / 3</div>
+          <img src="resources/images/cup-1320578__480.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fades">
+          <div class="numbertext">3 / 3</div>
+          <img src="resources/images/cup-1320578__480.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        <div class="mySlides fades">
+          <div class="numbertext">4 / 4</div>
+          <img src="resources/images/cup-1320578__480.jpg" style="width:100%">
+          <div class="text">Caption T</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+
+
+
+
+</div>
+
+  </body>
+</html>

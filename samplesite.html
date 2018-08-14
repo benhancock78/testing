@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Your Holiday Home Online Sample</title>
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/samplestyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container-fluid top_box">
+      <a href="index.html"><img src="resources/images/yonly.png" alt="logo"></a>
+      <h6>Site for demonstration purposes only</h6>
+    </div>
+    <div class="container-fluid samplehead">
+
+          <h1>Wyndcliff Cottage</h1>
+          <h2>Stunning 3 bed cottage for holiday let in the Cotswolds</h2>
+
+
+
+    </div>
+    <div class="jumbotron main_image">
+    </div>
+
+    <div class="container-fluid links">
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <a href=#images>Photos</a>
+        </div>
+          <div class="col-sm-2 text-center">
+            <a href="#property">The Property</a>
+          </div>
+          <div class="col-sm-2 text-center">
+            <a href="#localarea">Local Area</a>
+          </div>
+          <div class="col-sm-2 text-center">
+            <a href="#where">Where We Are</a>
+          </div>
+          <div class="col-sm-2 text-center">
+            <a href="#others">What others say</a>
+          </div>
+          <div class="col-sm-2 text-center">
+            <a href="#contact">Contact Us</a>
+          </div>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid welcome top_margin">
+      <h3>Welcome</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu sem lorem. Duis ac lobortis leo. Aenean rutrum risus sit amet arcu condimentum iaculis sed a mauris. Fusce eros sapien, iaculis vel nibh id, viverra posuere massa. Ut eu dignissim justo, quis dapibus sapien. Mauris pulvinar, est convallis aliquet maximus, urna tellus vehicula elit, vitae porttitor tortor diam vitae arcu. Maecenas pharetra, eros sed pretium tempor, nisi massa dignissim turpis, eu scelerisque mi velit a est. </p><p>In varius laoreet leo, at facilisis leo imperdiet at. In volutpat malesuada imperdiet. Aliquam magna libero, ultrices ac nunc vel, porta suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Curabitur luctus lectus a faucibus vestibulum. Proin malesuada dui nec finibus tempor. Quisque lacus est, pretium ut vehicula vitae, aliquet sed est. Maecenas hendrerit vulputate feugiat. Integer mattis tellus ut gravida scelerisque. Nam accumsan lacus lacinia dolor maximus, nec pretium urna feugiat. Donec in consequat turpis. Maecenas eget eros sodales, feugiat lorem in, congue ante. Quisque ac enim sollicitudin, tincidunt diam eget, sodales massa. Proin ac scelerisque dolor, vitae </p><p>luctus quam. Donec bibendum libero at fringilla bibendum. Aliquam porta porttitor metus. Vestibulum vitae aliquet turpis, tristique semper dui. Sed hendrerit cursus justo aliquam commodo. Fusce ultricies suscipit feugiat. Phasellus et dui nec velit aliquet dictum.</p>
+    </div>
+
+    <div class="container-fluid images top_margin" id="images">
+      <div class="title_fav">
+        <h3>Images</h3>
+        <a href="#">
+        <i class="fas fa-angle-up"></i>
+        </a>
+      </div>
+      <div class="slideshow-container">
+
+        <div class="mySlides fades">
+          <div class="numbertext">1 / 3</div>
+          <img src="resources/images/xlarge_AITAAP6626_163395_V1_E453.jpg" style="width:100%">
+          <div class="text">Front</div>
+        </div>
+
+        <div class="mySlides fades">
+          <div class="numbertext">2 / 3</div>
+          <img src="resources/images/kitchen.jpg" style="width:100%">
+          <div class="text">Fully Equiped Kitchen</div>
+        </div>
+
+        <div class="mySlides fades">
+          <div class="numbertext">3 / 3</div>
+          <img src="resources/images/lounge.jpg" style="width:100%">
+          <div class="text">The Lounge</div>
+        </div>
+        <div class="mySlides fades">
+          <div class="numbertext">4 / 4</div>
+          <img src="resources/images/cup-1320578__480.jpg" style="width:100%">
+          <div class="text">Caption Th</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+    </div>
+
+    <div class="container-fluid property top_margin" id="property">
+      <div class="title_fav">
+        <h3>The Property</h3>
+        <a href="#">
+        <i class="fas fa-angle-up"></i>
+        </a>
+      </div>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col" class="font-weight-bold">Item</th>
+                <th scope="col" class="font-weight-bold">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">No. of Bedrooms</th>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">Sleeps</th>
+                <td>Max 8</td>
+              </tr>
+              <tr>
+                <th scope="row">Garden</th>
+                <td>100ft</td>
+              </tr>
+              <tr>
+                <th scope="row">For Children</th>
+                <td>Mix of games, DVDs, etc</td>
+              </tr>
+              <tr>
+                <th scope="row">TV</th>
+                <td>36", Smart TV</td>
+              </tr>
+              <tr>
+                <th scope="row">Pets Allowed?</th>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <th scope="row">Wi-Fi</th>
+                <td>Yes</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid local_area top_margin" id="localarea">
+      <div class="title_fav">
+        <h3>The Local Area</h3>
+        <a href="#">
+        <i class="fas fa-angle-up"></i>
+        </a>
+      </div>
+      <div class="row">
+
+        <div class="col-sm-3">
+            <img src="resources/images/redwine.jpeg" class="img-fluid border" alt="red wine">
+        </div>
+        <div class="col-sm-9 area_item">
+            <h4>Local Pub</h4>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ornare scelerisque lacus nec rutrum. Pellentesque commodo scelerisque lectus, hendrerit dictum est rutrum facilisis. Curabitur sit amet purus quis augue iaculis auctor. Nam tempus finibus dui a fringilla. Donec odio odio, pretium et dignissim ac, consequat quis sapien. Morbi aliquet mi.</span>
+            <a href="#">The Little Chomlette</a>
+        </div>
+
+        <div class="col-sm-3">
+            <img src="resources/images/walk.jpg" class="img-fluid border" alt="red wine">
+        </div>
+        <div class="col-sm-9 area_item">
+              <h4>Local Walks</h4>
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ornare scelerisque lacus nec rutrum. Pellentesque commodo scelerisque lectus, hendrerit dictum est rutrum facilisis. Curabitur sit amet purus quis augue iaculis auctor. Nam tempus finibus dui a fringilla. Donec odio odio, pretium et dignissim ac, consequat quis sapien. Morbi aliquet mi.</span>
+              <a href="https://www.cotswoldsaonb.org.uk/visiting-and-exploring/walking/">Cotswolds ANOB Walking Guide</a>
+        </div>
+
+        <div class="col-sm-3">
+            <img src="resources/images/rest.jpeg" class="img-fluid border" alt="red wine">
+        </div>
+        <div class="col-sm-9 area_item">
+              <h4>Local Restuarant</h4>
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ornare scelerisque lacus nec rutrum. Pellentesque commodo scelerisque lectus, hendrerit dictum est rutrum facilisis. Curabitur sit amet purus quis augue iaculis auctor. Nam tempus finibus dui a fringilla. Donec odio odio, pretium et dignissim ac, consequat quis sapien. Morbi aliquet mi.</span>
+              <a href="#">The Black Bear Pub & Restuarant</a>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+    <div class="container-fluid location top_margin" id="where">
+      <div class="title_fav">
+        <h3>Where we are</h3>
+        <a href="#">
+        <i class="fas fa-angle-up"></i>
+        </a>
+      </div>
+      <span>Based just outside the lovely Cotswold village Lower Slaughter...</span>
+
+      <div class="embed-responsive embed-responsive-16by9 border">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.796283204772!2d0.00004321520461507493!3d51.44353502319254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a9e2fa84b479%3A0x108129973fe3de93!2sWellmeadow+Rd%2C+London+SE6+1HW!5e0!3m2!1sen!2suk!4v1533904658578" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+
+    <div class="container-fluid testimonials top_margin" id="others">
+      <div class="title_fav">
+        <h3>What other guests say</h3>
+        <a href="#">
+        <i class="fas fa-angle-up"></i>
+        </a>
+      </div>
+      <div class="quote_item">
+        <span class="font-weight-bold">A Lovely Place to Stay!</span>
+        <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim arcu commodo eros dapibus maximus quis nec elit. Sed nec mi non ex iaculis fringilla. Pellentesque sit amet est id eros auctor congue ut vel libero. Suspendisse eu dui in risus consectetur accumsan a tempor lorem." </span>
+        <span  class="font-italic">Ben, Karyn & Chommers, Stayed Aug 2017</span>
+      </div>
+      <div class="quote_item">
+        <span class="font-weight-bold">A Lovely Place to Stay!</span>
+        <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dignissim arcu commodo eros dapibus maximus quis nec elit. Sed nec mi non ex iaculis fringilla. Pellentesque sit amet est id eros auctor congue ut vel libero. Suspendisse eu dui in risus consectetur accumsan a tempor lorem." </span>
+        <span  class="font-italic">Ben, Karyn & Chommers, Stayed Aug 2017</span>
+      </div>
+    </div>
+
+
+    <div class="container-fluid contact top_margin" id="contact">
+      <div class="title_fav">
+        <h3>Contacts</h3>
+        <a href="#">
+        <i class="fas fa-angle-up"></i>
+        </a>
+      </div>
+      <p>Drop us an e-mail on XXXX@XXXX.COM</p>
+    </div>
+    <footer>
+      <!-- <a href="index.html">&copy Your Holiday Home Online</a> -->
+    </footer>
+
+
+    <nav class="navbar fixed-bottom navbar-light bg-light d-flex justify-content-between">
+      <a href="index.html"><img src="resources/images/yonly.png" alt="logo"></a>
+       <p class="mobilegone">&copy Your Holiday Home Online</p>
+      <a href="contact.html" class="contact_us middle font-weight-bold">>> Get In Touch <<</a>
+    </nav>
+</html>
